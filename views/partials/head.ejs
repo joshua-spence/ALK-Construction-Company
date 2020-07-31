@@ -1,0 +1,162 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALK | Construction LTD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 150px;
+            position: relative;
+            background-color: white;
+        }
+        .logo{
+            width: 22vh;
+            margin: 3px 50px;
+        }
+        nav li a{
+            text-decoration: none;
+        }
+        nav li{
+            list-style: none;
+        }
+        nav ul{
+            float: right;
+            margin-right: 50px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 130px;
+            margin: 0 25px;
+        }
+        nav ul li a{
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Karla', sans-serif;
+            text-transform: uppercase;
+        }
+        a:hover{
+            color: rgb(88, 88, 88);
+            transition: .5s;
+        }
+        .checkbtn{
+            font-size: 30px;
+            color: black;
+            line-height: 80px;
+            margin-right: 40px;
+            float: right;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        @media(max-width: 880px){
+            .logo{
+                margin: 3px 20px;
+            }
+            .checkbtn{
+                display: block;
+                padding-top: 40px;
+            }
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                left: -100%;
+                background: white;
+                text-align: left;
+                transition: all .5s;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height:30px;
+            }
+            nav ul li a{
+                font-size: 22px;
+            }
+            a:hover{
+                color: rgb(88, 88, 88);
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+        }
+        .container-1{
+            width: 100%;
+            height: 100vh;
+            background-image: url('./images/backgrnd-img/hammer-craftsman-tools.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+
+        
+        /* contact-page */
+        #contact-background{
+            background-image: url('./images/backgrnd-img/black-power-tool.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            z-index: -2;
+        }
+        .contact-card{
+            display: grid;
+            grid-template-columns: 400px;
+            grid-template-rows: auto;
+            justify-content: center;
+            background-color: white;
+            width: 80vh;
+            margin: 0 auto;
+            position: relative;
+            top: 10vh;
+            border-radius: 50px;
+            padding: 30px 10px;
+        }
+        .contact-card div{
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        .contact-card div span{
+            font-weight: lighter;
+        }
+        .contact-card div h2{
+            line-height: 40px;
+        }
+        .contact-card div a{
+            cursor: pointer;
+            z-index: 2;
+        }
+        .contact-card button{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border:1px solid black;
+            background-color: white;
+            width: 80%;
+            height: 40px;
+        }
+        .contact-card span:nth-child(1){
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .contact-card div h3{
+            line-height: 40px;
+        }
+
+    </style>
+</head>
